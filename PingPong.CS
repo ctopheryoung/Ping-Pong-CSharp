@@ -9,7 +9,7 @@ public class PingPong
     string yourNumberString = Console.ReadLine();
     int yourNumberInt = int.Parse(yourNumberString);
 
-    for (int number = 0; number <= yourNumberInt; number ++)
+    for (int number = 1; number <= yourNumberInt; number ++)
     {
       if (number % 15 == 0)
       {
