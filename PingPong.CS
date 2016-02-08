@@ -1,15 +1,10 @@
 using System;
 
-public class PingPong
+class PingPong
 {
-  public static void Main()
+  static void countUp(int yourNumber)
   {
-    Console.WriteLine("What's your number?");
-
-    string yourNumberString = Console.ReadLine();
-    int yourNumberInt = int.Parse(yourNumberString);
-
-    for (int number = 1; number <= yourNumberInt; number ++)
+    for (int number = 1; number <= yourNumber; number ++)
     {
       if (number % 15 == 0)
       {
@@ -24,6 +19,14 @@ public class PingPong
             {
               Console.WriteLine(number);
             }
-    }
+      }
+  }
+
+  static void Main()
+  {
+    Console.WriteLine("What's your number?");
+    string yourNumberString = Console.ReadLine();
+    int yourNumberInt = int.Parse(yourNumberString);
+    countUp(yourNumberInt);
   }
 }
